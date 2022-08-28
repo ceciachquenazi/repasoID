@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,198,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.section__container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 10%;
+    
+    
+}
+
+
+.section__izquierda {
+    background: url("DSC_0560.jpg") ;
+    background-size: cover;
+    width: 50vw;
+    height: 60vh;
+    border: 0px solid transparent;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.section__derecha {
+    color: #fff;
+    background-color: #0e493999;
+    width: 50vw;
+    line-height: 2em;
+    border: 0px solid transparent;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    font-family: 'Coming Soon', cursive;
+    font-size: 3vw;
+    margin-bottom: 2%;
+}
+
+.section__derecha-p {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 2% 10%;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes a {
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10%;
+    padding: 7px;
+    background-color: rgba(34,193,195,1);
+    border: 3px solid #0e4939;
+    border-radius: 50%;
+    color: #0e4939;
+    
+}
+
+a:visited {
+    color: #0e4939;
+}
+
+a:hover {
+    color: rgb(175, 110, 30);
+}
+
+
+@media only screen and (min-width: 200px) AND (max-width: 800px) {
+	.section__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        padding-top: 10%;
+       
+    }
+
+    .section__derecha {
+        border-radius: 0px 0px 20px 20px;
+       width: 90vw;
+    }
+
+    .section__izquierda {
+        border-radius: 20px 20px 0px 0px;
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .section__derecha-p {
+        font-size: 2vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+        margin-bottom: 0%;
+    }
+}
